@@ -1,1 +1,56 @@
 break,continue理解不够深入，实际上，我还没真正理解。
+ord() chr()会出错 没出结果，在pychram里面就可以
+int() float() str() 数值类型转换 其中将str转int时 不能是浮点数的
+需要用'的时候 用""
+字符串操作符 ' ', + , * , in ,[],四种 字符串索引从0开始！搭配range()刚好 都是包含左侧的边界同时不包含右边的边界
+内建函数中处理字符串的有 ord(),input(),int(),float(),len(),print()
+str是内置类型，string是外部python模块 
+str的方法：
+str.upper()    str.lower()      str.title()    str.capitalize()
+str.count()  str.find() str.rfind() str.index() str.rindex()
+换行用 \ 换行不见得就是代码太多，有时候是为了对齐好看，记住这点，主动寻求对其好看而不是等到代码太长才用这个 \ 换行
+in    str.replace()  eg: 'xxx is a good boy!'.replace('xxx','szx',1)
+str.startswith()  str.endswith()
+str.strip() str.lstrip()  str.rstrip()
+str.splitlines()  str.split()
+
+str.join() eg:
+s=','
+t=['p','y','t','h','o','n']
+s.join(t)
+
+str.center(20,'=')
+str.rjust(40,'.') str.ljust(40,'.')
+# 批量生成文件名  
+for i in range(1, 11):
+    filename = str(i).zfill(3) + '.mp3'
+    print(filename)
+    
+格式化字符串 str.format() 和 f.string
+name='szx'
+age=26
+f'{name}\'age is {age}'
+
+'{}\' age is {}'.format('szx',26)
+
+属性判断      str.isXXX()
+
+
+open(filename,mode='r')     # r,w
+f=open(filename,'w')
+f.name  f.close()  
+import os
+os.remove(f.name)
+
+f.read()
+f.readline()          str.strip()
+f.readlines()             把f读取到一个list
+
+f.write()
+f.writelines()            把list内容写进f
+
+with open() as f:
+
+ 
+
+
